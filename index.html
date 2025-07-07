@@ -31,6 +31,14 @@
 
     button:hover {
       background-color: #005bbb;
+      textarea {
+  padding: 10px;
+  width: 100%;
+  max-width: 300px;
+  font-family: Arial;
+  resize: vertical; /* Allows resizing up/down */
+}
+
     }
   </style>
 </head>
@@ -48,6 +56,10 @@
     <input type="email" id="email" placeholder="Enter your email"><br><br>
 
     <button type="submit">Submit</button>
+    <label for="message">Message:</label><br>
+<textarea id="message" rows="4" cols="30" placeholder="Write something..."></textarea><br><br>
+
   </form>
 </body>
 </html>
+
