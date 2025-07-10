@@ -1,65 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Karthik's Website</title>
-  
-  <!-- 🎨 CSS Styling -->
+  <meta charset="UTF-8">
+  <title>Karthik's Portfolio</title>
   <style>
     body {
-      background-color: #f0f8ff;
       font-family: Arial, sans-serif;
       padding: 20px;
+      background-color: #f3f3f3;
     }
 
     h1, h2 {
       color: #333;
     }
 
-    input, button {
+    form {
+      background-color: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      max-width: 400px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    input, textarea {
       padding: 10px;
-      margin: 5px 0;
       width: 100%;
-      max-width: 300px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
     }
 
     button {
-      background-color: #008cff;
+      padding: 10px 20px;
+      background-color: #4CAF50;
       color: white;
       border: none;
+      border-radius: 5px;
       cursor: pointer;
     }
 
-    button:hover {
-      background-color: #005bbb;
-      textarea {
-  padding: 10px;
-  width: 100%;
-  max-width: 300px;
-  font-family: Arial;
-  resize: vertical; /* Allows resizing up/down */
-}
+    ul {
+      color: blue;
+      font-weight: bold;
+    }
 
+    img {
+      border-radius: 50%;
+      width: 150px;
+      margin-top: 10px;
     }
   </style>
 </head>
-
 <body>
-  <h1>Welcome to Karthik's Website</h1>
-  <p>This is my first full stack journey 🚀</p>
 
-  <h2>Contact Form</h2>
+  <h1>Karthik's Contact Form</h1>
+
   <form>
     <label for="name">Name:</label><br>
-    <input type="text" id="name" placeholder="Enter your name"><br><br>
+    <input type="text" id="name" placeholder="Enter your name"><br>
 
     <label for="email">Email:</label><br>
-    <input type="email" id="email" placeholder="Enter your email"><br><br>
+    <input type="email" id="email" placeholder="Enter your email"><br>
+
+    <label for="message">Message:</label><br>
+    <textarea id="message" rows="4" placeholder="Write something..."></textarea><br>
 
     <button type="submit">Submit</button>
-    <label for="message">Message:</label><br>
-<textarea id="message" rows="4" cols="30" placeholder="Write something..."></textarea><br><br>
-
   </form>
+
+  <h2>My Skills:</h2>
+  <ul>
+    <li>Python</li>
+    <li>HTML & CSS</li>
+    <li>GitHub</li>
+  </ul>
+
+  <h2>My Profile Pic:</h2>
+  <img src="https://via.placeholder.com/150" alt="My Photo">
+
 </body>
 </html>
-
